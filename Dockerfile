@@ -2,11 +2,9 @@ FROM node:14
 
 WORKDIR /usr/src/app
 
-COPY my-react-app-jenkins-and-docker/package*.json ./
+COPY * ./
 
 RUN npm install
-
-COPY . .
 
 EXPOSE 3000
 
