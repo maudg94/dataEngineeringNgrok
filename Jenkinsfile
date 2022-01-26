@@ -4,7 +4,7 @@ pipeline{
         stage('docker Build'){
             steps{
                 echo "test"
-                bat "docker build"
+                bat "docker build ."
             }
         }
     }
