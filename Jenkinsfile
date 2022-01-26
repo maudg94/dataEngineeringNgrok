@@ -1,7 +1,9 @@
 pipeline{
-    agent any
+    agent{
+        dockerfile true
+    }
     stages{
-        stage('NPM Build'){
+        stage('docker Build'){
             steps{
                 echo "test"
             }
