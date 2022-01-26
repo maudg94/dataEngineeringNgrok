@@ -3,8 +3,7 @@ pipeline{
     stages{
         stage('NPM Build'){
             steps{
-                bat "npm install"
-                bat "npm start"
+                echo "test"
             }
         }
     }
